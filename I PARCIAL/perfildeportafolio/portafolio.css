@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #2C3E50;
+    color: white;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.perfil-title {
+    color: #000;
+}
+
+.perfil-section p {
+    text-align: justify;
+}
+
+.formacion-title {
+    color: #000;
+}
+
+.experiencia-title {
+    color: #000;
+}
+
+.idiomas-title {
+    color: #fff;
+}
+
+.intereses-title {
+    color: #fff;
+}
+
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.idiomas-section ul li {
+    background-color: gray;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    width: 70%;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.fecha-section {
+    font-size: 15px;
+    color: #fff;
+    margin-top: auto; 
+    margin-bottom: 0; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+}

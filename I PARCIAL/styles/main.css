@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*
+content
+padding
+border
+margin
+
+trbl -> problema -> trouble
+top right button left
+
+*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0px 1rem;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7rem 0.9rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+}
+
+.hero .hero-title,
+.hero .hero-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #000;
+    text-shadow: 1px 1px 3px #000;
+    font-size: 2rem;
+    padding: 2.5rem 1rem;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.hero .hero-badge {
+    background-color: #0f8902;
+    z-index: 999;
+    font-size: 2rem;
+    box-shadow: 3px 3px 5px #074000;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.hero .top-right {
+    top: 25%;
+    left: 75%;
+}
+
+.table-container {
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.f-table tr th {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+.f-table tr td {
+    border-bottom: 1px solid #777;
+}
+
+.f-table tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+.card-holder {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card-holder .card {
+    width: 300px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 5px #000;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+}
+
+.card .card-header {
+    display: block;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-bottom: 2px solid #333;
+}
+
+.card .card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .card-content {
+    padding: 0.75rem;
+    line-height: 1.25;
+}
+
+.card .card-footer {
+    display: flex;
+    padding: 0.75rem;
+}
+
+.card .card-footer button {
+    border: 1px solid #573829;
+    box-shadow: 1px 1px 10px #a47864;
+    background-color: #a47864;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 3px;
+}
+
+.card .card-footer button.center {
+    margin: 0px auto;
+
+}
+
+.card .card-footer button.right {
+    margin-left: auto;
+}
+
+.card .card-footer button.stretch {
+    width: 100%;
+
+}
+
+.gridlayout {
+    display: flex;
+}
+
+.gridlayout .rows {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridlayout .rows [class*='col-']{
+}
+
+.gridlayout .rows .col-1{
+    flex-basis: calc(100% / 12);
+}
+.gridlayout .rows .col-2{
+    flex-basis: calc(100% / 12 * 2);
+}
+.gridlayout .rows .col-3{
+    flex-basis: calc(100% / 12 * 3);
+}
+.gridlayout .rows .col-4{
+    flex-basis: calc(100% / 12 * 4);
+}
+.gridlayout .rows .col-5{
+    flex-basis: calc(100% / 12 * 5);
+}
+.gridlayout .rows .col-6{
+    flex-basis: calc(100% / 12 * 6);
+}
