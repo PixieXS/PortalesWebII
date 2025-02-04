@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body{
+    padding:0px;
+    margin:0px;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 img {
-    max-width: 100%;
+    max-width:100%;
 }
-
 /*
 content
 padding
@@ -23,60 +24,62 @@ top right button left
 
 */
 
-header {
-    display: flex;
+.container {
+    padding:0.5rem;
+}
+
+
+
+header{
+    display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #000;
-    color: #fff;
+    color:#fff;
     overflow: hidden;
 }
 
-header h1 {
-    margin: 0px;
-    padding: 0px 1rem;
+header h1{
+    margin:0px;
+    padding:0px 1rem;
     font-size: 1.5rem;
 }
-
-header nav ul {
+header nav ul{
     display: flex;
     flex-direction: row;
     gap: 0.8rem;
-    padding: 0px;
-    margin: 0px;
+    padding:0px;
+    margin:0px;
     list-style: none;
     align-items: center;
 }
-
 header nav ul li a {
-    color: #fff;
+    color:#fff;
     text-decoration: none;
     display: inline-block;
     padding: 0.7rem 0.9rem;
 }
 
 .hero {
-    position: relative;
+    position:relative;
 }
-
-.hero img {
-    width: 100%;
+.hero img{
+    width:100%;
     height: 680px;
     object-fit: cover;
 }
 
-.hero .hero-title,
-.hero .hero-badge {
+.hero .hero-title, .hero .hero-badge {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: #000;
+    color:#000;
     text-shadow: 1px 1px 3px #000;
     font-size: 2rem;
     padding: 2.5rem 1rem;
     background-color: #fff;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
 }
 
 .hero .hero-badge {
@@ -98,26 +101,28 @@ header nav ul li a {
 }
 
 .table-container {
-    max-width: 100%;
+    max-width:100%;
     overflow: scroll;
 }
 
-.f-table tr th {
+.f-table tr th{
     border-top: 1px solid #777;
     border-bottom: 1px solid #777;
 }
 
-.f-table tr td {
+.f-table tr td{
     border-bottom: 1px solid #777;
 }
 
-.f-table tr:nth-child(2n) {
+.f-table tr:nth-child(2n){
     background-color: #ccc;
 }
 
+
 .card-holder {
-    display: flex;
+    display:flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 1rem;
 }
@@ -129,30 +134,30 @@ header nav ul li a {
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    flex: 1 0;
+    min-height: 380px;
 }
-
-.card .card-header {
+.card .card-header strong {
     display: block;
     text-align: center;
-    padding: 1rem 0.5rem;
+    padding:1rem 0.5rem;
     border-bottom: 2px solid #333;
 }
 
 .card .card-header img {
-    width: 100%;
+    width:100%;
     height: 200px;
     object-fit: cover;
 }
 
 .card .card-content {
-    padding: 0.75rem;
+    flex: 1 0;
+    padding:0.75rem;
     line-height: 1.25;
 }
 
 .card .card-footer {
     display: flex;
-    padding: 0.75rem;
+    padding:0.75rem;
 }
 
 .card .card-footer button {
@@ -166,46 +171,158 @@ header nav ul li a {
 
 .card .card-footer button.center {
     margin: 0px auto;
-
 }
 
 .card .card-footer button.right {
-    margin-left: auto;
+    margin-left:auto;
 }
 
 .card .card-footer button.stretch {
-    width: 100%;
-
+    width:100%;
 }
+
 
 .gridlayout {
     display: flex;
+    flex-direction: column;
 }
 
-.gridlayout .rows {
+.gridlayout .row {
     flex: 1;
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
 }
 
-.gridlayout .rows [class*='col-']{
+.form {
+    max-width:640px;
+    margin:0px auto;
 }
 
-.gridlayout .rows .col-1{
+.gridlayout .row [class*='col-']{
+    display:flex;
+    flex: 0 0;
+}
+
+.gridlayout .row .col-1 {
     flex-basis: calc(100% / 12);
 }
-.gridlayout .rows .col-2{
+.gridlayout .row .col-2 {
     flex-basis: calc(100% / 12 * 2);
 }
-.gridlayout .rows .col-3{
+.gridlayout .row .col-3 {
     flex-basis: calc(100% / 12 * 3);
 }
-.gridlayout .rows .col-4{
+.gridlayout .row .col-4 {
     flex-basis: calc(100% / 12 * 4);
 }
-.gridlayout .rows .col-5{
+.gridlayout .row .col-5 {
     flex-basis: calc(100% / 12 * 5);
 }
-.gridlayout .rows .col-6{
+.gridlayout .row .col-6 {
     flex-basis: calc(100% / 12 * 6);
+}
+.gridlayout .row .col-7 {
+    flex-basis: calc(100% / 12 * 7);
+}
+.gridlayout .row .col-8 {
+    flex-basis: calc(100% / 12 * 8);
+}
+.gridlayout .row .col-9 {
+    flex-basis: calc(100% / 12 * 9);
+}
+.gridlayout .row .col-10 {
+    flex-basis: calc(100% / 12 * 10);
+}
+.gridlayout .row .col-11 {
+    flex-basis: calc(100% / 12 * 11);
+}
+.gridlayout .row .col-12 {
+    flex-basis: 100%;
+}
+
+@media (min-width:481px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .gridlayout .row .col-m-1 {
+        flex-basis: calc(100% / 12);
+    }
+    .gridlayout .row .col-m-2 {
+        flex-basis: calc(100% / 12 * 2);
+    }
+    .gridlayout .row .col-m-3 {
+        flex-basis: calc(100% / 12 * 3);
+    }
+    .gridlayout .row .col-m-4 {
+        flex-basis: calc(100% / 12 * 4);
+    }
+    .gridlayout .row .col-m-5 {
+        flex-basis: calc(100% / 12 * 5);
+    }
+    .gridlayout .row .col-m-6 {
+        flex-basis: calc(100% / 12 * 6);
+    }
+    .gridlayout .row .col-m-7 {
+        flex-basis: calc(100% / 12 * 7);
+    }
+    .gridlayout .row .col-m-8 {
+        flex-basis: calc(100% / 12 * 8);
+    }
+    .gridlayout .row .col-m-9 {
+        flex-basis: calc(100% / 12 * 9);
+    }
+    .gridlayout .row .col-m-10 {
+        flex-basis: calc(100% / 12 * 10);
+    }
+    .gridlayout .row .col-m-11 {
+        flex-basis: calc(100% / 12 * 11);
+    }
+    .gridlayout .row .col-m-12 {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        margin: 0px auto;
+        max-width: 1200px;
+    }
+
+    .gridlayout .row .col-l-1 {
+        flex-basis: calc(100% / 12);
+    }
+    .gridlayout .row .col-l-2 {
+        flex-basis: calc(100% / 12 * 2);
+    }
+    .gridlayout .row .col-l-3 {
+        flex-basis: calc(100% / 12 * 3);
+    }
+    .gridlayout .row .col-l-4 {
+        flex-basis: calc(100% / 12 * 4);
+    }
+    .gridlayout .row .col-l-5 {
+        flex-basis: calc(100% / 12 * 5);
+    }
+    .gridlayout .row .col-l-6 {
+        flex-basis: calc(100% / 12 * 6);
+    }
+    .gridlayout .row .col-l-7 {
+        flex-basis: calc(100% / 12 * 7);
+    }
+    .gridlayout .row .col-l-8 {
+        flex-basis: calc(100% / 12 * 8);
+    }
+    .gridlayout .row .col-l-9 {
+        flex-basis: calc(100% / 12 * 9);
+    }
+    .gridlayout .row .col-l-10 {
+        flex-basis: calc(100% / 12 * 10);
+    }
+    .gridlayout .row .col-l-11 {
+        flex-basis: calc(100% / 12 * 11);
+    }
+    .gridlayout .row .col-l-12 {
+        flex-basis: 100%;
+    }
 }
