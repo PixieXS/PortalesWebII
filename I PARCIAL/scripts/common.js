@@ -2,6 +2,8 @@ let formElement = null;
 let txtNombreInput = null;
 let txtEdadInput = null;
 
+let btnCiclos = null;
+
 const emptyStringRegex = /^\s*$/; ///regex101
 
 document.addEventListener('DOMContentLoaded', ()=>{
