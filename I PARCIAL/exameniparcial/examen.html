@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC en Logística y Manejo Aduanero</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
+    </script>
+
+    <style>
+        :root {
+            --bulma-primary-h: 30;
+            --bulma-primary-s: 60%;
+            --bulma-primary-l: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://AduanaServices.hn">
+                    <h1>AduanaServices HN</h1>
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Inicio
+                    </a>
+
+                    <a class="navbar-item">
+                        Servicios
+                    </a>
+
+                    <a class="navbar-item">
+                        Acerca De Nosotros
+                    </a>
+
+                    <a class="navbar-item">
+                        Contacto
+                    </a>
+
+
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Registrarse</strong>
+                            </a>
+                            <a class="button is-light">
+                                Ingresar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero is-small is-primary">
+            <div class="hero-body">
+                <p class="title mt-1">Eficiencia y transparencia en los procesos aduaneros</p>
+                <p class="subtitle mt-2">La eficiencia y transparencia en los procesos aduaneros son importantes para el
+                    desarrollo económico de un país. Para lograrlo, se pueden implementar estrategias como la
+                    automatización, la clasificación arancelaria y la coordinación entre las aduanas y el sector
+                    privado. </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <section class="my-4 px-4">
+                <div class="columns is-mobile is-multiline is-centered is-5">
+                    <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://placehold.co/600x400" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Control De Mercancías</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                    iaculis mauris.
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://placehold.co/600x400" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Cobro de impuestos</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                    iaculis mauris.
+                                    <br />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://placehold.co/600x400" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Registro De Mercancias</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                    iaculis mauris.
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <div class="columns">
+                <div class="column"><strong>AduanaServices.hn</strong></div>
+                <div class="column"><strong>Contactanos</strong>
+                    <p>
+                        Telefono: +504 2555-5898 <br>
+                        Direccion: Colonia Del Valle,San Pedro Sula
+                    </p>
+                </div>
+                <div class="column"><strong>Sobre Nosotros</strong></div>
+                <div class="column"><strong>Redes Sociales</strong>
+                    <p>
+                        <a>Instagram</a>
+                        <br>
+                        <a>Facebook</a>
+                        <br>
+                        <a>Twitter</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
