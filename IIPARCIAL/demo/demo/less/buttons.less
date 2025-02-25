@@ -1,0 +1,29 @@
+.btn-primary {
+    .defaultButton();
+    background-color: lighten(@primary-bg-color, 5%);
+    color: @primary-text-color;
+}
+
+.btn-secondary {
+    .defaultButton();
+    background-color: @secondary-bg-color;
+    color: @secondary-text-color;
+}
+
+.btn {
+    .btn-secondary();
+    background-color: darken(@primary-bg-color, 5%);
+    color: @primary-text-color;
+    
+}
+
+.btn-round {
+    color: @primary-text-color;
+    .defaultButton();
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
