@@ -4,50 +4,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.25rem 1rem;
-
     div {
         display: flex;
         gap: 1rem;
         align-items: center;
-        padding: 0.25rem 1rem;
-
+        padding:0.25rem 1rem;
         h1 {
-            margin: 0px;
+            margin:0px;
             font-size: 1.1rem;
         }
-
         img {
             display: block;
-            align-items: center;
             border-radius: 50%;
         }
     }
-
     nav {
         ul {
             display: flex;
             align-items: center;
             list-style: none;
-            padding: 0px;
-            gap: 0.75rem;
-            padding: 0px;
-        }
-
-        li {
-            a {
-                display: inline-block;
-                padding: 0.5rem 1rem;
-                text-decoration: none;
-                color: @primary-text-color;
-                transition: all 0.3s ease-in;
-
-                &:hover {
-                    background-color: @secondary-bg-color;
-                    color: @secondary-text-color;
+            gap:0.75rem;
+            padding:0px;
+            li {
+                a {
+                    display: inline-block;
+                    padding: 0.5rem 1rem;
+                    text-decoration: none;
+                    color: @primary-text-color;
                     transition: all 0.3s ease-in;
+                    &:hover {
+                        background-color: @secondary-bg-color;
+                        color: @secondary-text-color;
+                        transition: all 0.3s ease-in;
+                    }
                 }
             }
+
         }
     }
+
 }

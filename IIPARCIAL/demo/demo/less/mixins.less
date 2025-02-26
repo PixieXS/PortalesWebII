@@ -1,24 +1,27 @@
-.defaultSpacing {
+.fw-img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+
+.defaultSpacing {
     padding: @p-3 @p-4;
 }
 
-.shadow-sm{
-
+.shadow-sm {
     box-shadow: 1px 1px 3px @primary-bg-color;
 }
 
-.shadow-md{
-
-    box-shadow: 1px 1px 5px @primary-bg-color;
+.shadow-md {
+    box-shadow: 3px 3px 5px @primary-bg-color;
 }
 
-.shadow-lg{
-
-    box-shadow: 1px 1px 7px @primary-bg-color;
+.shadow-lg {
+    box-shadow: 3px 3px 7px @primary-bg-color;
 }
 
-.defaultButton{
+.default-button{
     display: inline-block;
     .defaultSpacing();
     .shadow-sm();
@@ -26,7 +29,7 @@
     font-weight: bold;
     font-size: 1rem;
     border: 1px solid @primary-bg-color;
-    background: @primary-bg-color;
+    background-color: @primary-bg-color;
     color: @primary-text-color;
     text-decoration: none;
 }

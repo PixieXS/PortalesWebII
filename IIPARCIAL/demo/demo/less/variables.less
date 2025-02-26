@@ -1,28 +1,29 @@
 @primary-bg-color: #008c64;
-@primary-text-color: #fff;
+@primary-bg-color-dark: darken(@primary-bg-color, 10%);
+@primary-bg-color-darker: darken(@primary-bg-color, 50%);
+@primary-bg-color-light: lighten(@primary-bg-color, 10%);
+@primary-bg-color-lighter: lighten(@primary-bg-color, 20%);
 
+@primary-text-color: #fff;
 @secondary-bg-color: #eee;
 @secondary-text-color: #333;
 
-
-/*SPACING*/
+/*Spacing */
 @p-4: 1rem;
 @p-3: 0.75rem;
 @p-2: 0.5rem;
-@p-1: 0.25rem;
+@p-5: 1.5rem;
+@p-6: 2rem;
 
 
-/*BRAKES*/
-
+/*breaks*/
 #breaks {
-
     tablet: 768px;
     desktop: 1026px;
     wide: 2300px;
 }
 
 #breaks-prefix {
-
     tablet: md-;
     desktop: lg-;
     wide: xl-;
@@ -30,21 +31,19 @@
 
 
 #category {
-
-   xs: 0.5rem;
-   sm: 0.75rem;
-   st: 1rem;
-   md: 1.5rem;
-   lg: 2rem;
-   xl: 4rem;
+    xs: 0.5rem;
+    sm: 0.75rem;
+    st: 1rem;
+    md: 1.5rem;
+    lg: 2rem;
+    xl: 4rem;
 }
 
 #sides {
-
     top: t;
     btm: b;
     rgt: r;
     lft: l;
     hor: x;
-    vrt: y;
- }
+    ver: y;
+}

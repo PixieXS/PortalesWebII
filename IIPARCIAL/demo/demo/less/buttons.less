@@ -1,29 +1,26 @@
 .btn-primary {
-    .defaultButton();
-    background-color: lighten(@primary-bg-color, 5%);
-    color: @primary-text-color;
+    .default-button();
+    background-color: lighten(@primary-bg-color,5%);
+    color:@primary-text-color;
 }
 
 .btn-secondary {
-    .defaultButton();
+    .default-button();
     background-color: @secondary-bg-color;
-    color: @secondary-text-color;
+    color:@secondary-text-color;
 }
 
-.btn {
-    .btn-secondary();
-    background-color: darken(@primary-bg-color, 5%);
-    color: @primary-text-color;
-    
+.btn{
+    .default-button();
+    background-color: darken(@primary-bg-color, 2%);
 }
 
-.btn-round {
-    color: @primary-text-color;
-    .defaultButton();
+.btn-round{
+    .default-button();
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
 }

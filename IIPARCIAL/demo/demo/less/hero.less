@@ -1,0 +1,59 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+    @media (min-width: #breaks[tablet]) {
+        height: 80vh;
+    }
+
+    @media (min-width #breaks[desktop]) {
+        height: 90vh;
+    }
+
+    img {
+        .fw-img-cover();
+    }
+
+    div {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: fadeout(@primary-bg-color-lighter, 50%);
+        padding: 1rem;
+        border-radius: 9px;
+
+        @media (min-width:#breaks[tablet]) {
+            &.q1 {
+                bottom: unset;
+                top: 25%;
+                left: 25%;
+            }
+
+            &.q2 {
+                bottom: unset;
+                top: 25%;
+                left: 75%;
+            }
+
+            &.q3 {
+                bottom: unset;
+                top: 75%;
+                left: 25%;
+            }
+
+            &.q4 {
+                bottom: unset;
+                top: 75%;
+                left: 75%;
+            }
+        }
+
+        &.center {
+            bottom: unset;
+            top: 50%;
+            left: 50%;
+        }
+    }
+}
