@@ -1,0 +1,40 @@
+
+
+.footer {
+  background-color: @bg-footer-color;
+  color: @footer-text-color;
+  padding: 20px 0;
+  text-align: center;
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 15px;
+
+      li {
+        a {
+          color: @footer-link-color;
+          text-decoration: none;
+
+          &:hover {
+            color: @footer-link-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
