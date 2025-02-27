@@ -2,32 +2,72 @@
 @import "variables.less";
 @import "global.less";
 
-
+.sidebar {
+    flex: 1;
+    background-color: @secondary-color;
+    padding: @padding;
+    border-radius: @border-radius;
+    color: @background-color;
+    text-align: center;
+    box-shadow: @shadow;
+}
 
 .profile-pic {
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: @padding;
+}
+
+.name {
+    font-size: 1.5em;
+    margin-bottom: @padding;
 }
 
 .contact-info {
-    color: @font-color;
-    font-size: @font-size-base;
-    margin: 15px 0;
+    margin-bottom: @padding;
 }
 
-.idiomas-section, .intereses-section, .fecha-section {
-    margin-top: 20px;
+.section {
+    margin-bottom: 32px;
 }
 
-.idiomas-title, .intereses-title, .perfil-title, .formacion-title, .experiencia-title {
-    font-size: @font-size-heading;
+.section h2 {
+    font-size: 1.2em;
+    color: @background-color;
+    margin-bottom: 8px;
+}
+
+.list {
+    list-style: none;
+}
+
+.main-content {
+    flex: 2;
+    padding-left: @padding;
+}
+
+.item h3 {
+    font-size: 1.2em;
+    margin-bottom: 4px;
     color: @primary-color;
-    margin-bottom: 10px;
 }
 
-.item {
-    margin-bottom: 20px;
+.item p {
+    font-size: 0.9em;
+    color: @text-color;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-bottom: @padding;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
 }
