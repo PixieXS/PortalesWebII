@@ -36,7 +36,7 @@ concurrency:
       name: Instalar Dependencias
       run: npm install
       name: Verificar Variables De Ambiente
-      run: echo "DEPLOY_BASE_URL: $DEPLOY_BASE_URL"
+      run: echo "DEPLOY_BASE_URL $DEPLOY_BASE_URL"
       name: Compilar Proyecto
       run: npm run build
       name: Configurar Github Pages
