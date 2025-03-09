@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Imágenes</title>
+  <link rel="stylesheet" href="less/main.less" />
+</head>
+<body>
+
+  <h1>Galería de Imágenes</h1>
+
+  <div class="gallery">
+    {{#each images}}
+      <div class="gallery-item">
+        <img src="{{src}}" alt="{{alt}}">
+      </div>
+    {{/each}}
+  </div>
+
+</body>
+</html>
